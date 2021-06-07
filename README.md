@@ -1,4 +1,5 @@
 # YaMDb
+![workflow](https://github.com/drowsycoder/yamdb_final/actions/workflows/main.yml/badge.svg)
 
 Учебный проект YaMDb представляет собой базу данных произведений, разделенных на категории и жанры.
 Пользователи могут оставлять к произведениям отзывы, а к отзывам - комментарии.

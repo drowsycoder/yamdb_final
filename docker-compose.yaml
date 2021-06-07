@@ -3,7 +3,7 @@ version: '3.8'
 services:
 
   web:
-    build: .
+    image: drowzycoder/yamdb_final:latest
     restart: always
     volumes:
       - media_volume:/code/media/
