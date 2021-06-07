@@ -35,11 +35,9 @@ class User(AbstractUser):
 
     @property
     def has_api_administrate_permission(self):
-        has_permission = self.role == self.Role.ADMIN or self.is_superuser
-        return has_permission
+        return self.role == self.Role.ADMIN or self.is_superuser
 
     @property
     def has_api_moderate_permission(self):
-        has_permission = self.role in [self.Role.MODERATOR,
-                                       self.Role.ADMIN] or self.is_superuser
-        return has_permission
+        return self.role in [self.Role.MODERATOR,
+                             self.Role.ADMIN] or self.is_superuser

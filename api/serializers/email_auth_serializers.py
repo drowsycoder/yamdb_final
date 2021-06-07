@@ -57,7 +57,6 @@ class EmailCodePairSerializer(TokenObtainPairSerializer):
                 email=attrs.get('email'), username=username
             )
             token = self.get_token(self.user)
-            data = {'token': str(token.access_token)}
-            return data
+            return {'token': str(token.access_token)}
         raise serializers.ValidationError(
             'Something gone wrong')

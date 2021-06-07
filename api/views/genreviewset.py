@@ -1,5 +1,6 @@
 from api.models import Genre
 from api.serializers import GenreSerializer
+
 from .customapiviewset import CustomAPIViewSet
 
 
