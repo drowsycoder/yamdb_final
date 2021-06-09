@@ -1,6 +1,10 @@
 name: Yamdb_final-app workflow
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - 'master'
 
 jobs:
   tests:
