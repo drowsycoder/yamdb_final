@@ -55,7 +55,3 @@ python manage.py createsuperuser
 ```
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
-
-### Пример развернутого проекта
-
-http://178.154.230.234/admin/
